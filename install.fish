@@ -4,6 +4,7 @@ if test ! -e ~/.fish
   git clone --recursive git@github.com:mquinnv/fish-profile.git .fish
 else
   cd ~/.fish
+  git pull
 end
 git submodule update --init --recursive
 
