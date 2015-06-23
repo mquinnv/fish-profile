@@ -43,7 +43,7 @@ end
 function fish_title
   echo -n "$host: "
   if [ $_ = 'fish' ]
-    echo (prompt_pwd)
+    echo (pwd)
   else
     echo $_
   end
