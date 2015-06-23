@@ -21,3 +21,7 @@ Features
 4. sets title var with user/host info
 5. has many good vim plugins bundled
 6. consistent airline style bar for terminal and vim
+
+Preview
+--
+![Preview](preview.png)
