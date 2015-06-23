@@ -19,10 +19,11 @@ function install
 end
 
 if test -e $base/.oh-my-fish
-    rm -rf $base/.oh-my-fish
+  cd ~base/.oh-my-fish
+  git pull
+else
+  curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/tools/install.fish | fish
 end
-
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/tools/install.fish | fish
 
 install vimrc
 install vim
