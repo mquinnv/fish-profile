@@ -45,3 +45,7 @@ function fish_title
     echo $_
   end
 end
+
+function update.fish
+  ~/.fish/install.fish
+end
