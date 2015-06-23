@@ -6,7 +6,7 @@ if test ! -e $base/.fish
   echo "Checking out .fish"
   git clone --recursive git@git:/git/fish .fish
 else
-  cd ~base/.fish
+  cd $base/.fish
 end
 git submodule update --init --recursive
 
