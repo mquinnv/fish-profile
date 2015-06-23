@@ -1,14 +1,13 @@
 #!/usr/bin/env fish
 
 if test ! -e ~/.fish
-  echo "Checking out .fish"
   git clone --recursive git@github.com:mquinnv/fish-profile.git .fish
 else
   cd ~/.fish
 end
 git submodule update --init --recursive
 
-echo "Linking "
+echo "(Re-)linking "
 function install
   set dot .$argv
   test -e ~/$dot
