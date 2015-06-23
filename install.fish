@@ -27,3 +27,4 @@ install vim
 install config/fish/config.fish
 
 fish -c "omf install"
+fish -c "set -U fish_key_bindings fish_default_key_bindings"
