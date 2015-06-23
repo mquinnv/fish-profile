@@ -41,7 +41,7 @@ if test (id -u) -eq 0
 end
 
 function fish_title
-  echo -n "$host: "
+  echo -n "$host:"
   if [ $_ = 'fish' ]
     echo (pwd)
   else
