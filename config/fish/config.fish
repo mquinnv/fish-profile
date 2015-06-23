@@ -36,7 +36,7 @@ switch (uname)
 end
 
 set host (hostname -s)
-if test -eq 0 (id -u)
+if test (id -u) -eq 0 
   set host root@$host
 end
 
