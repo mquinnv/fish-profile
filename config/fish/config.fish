@@ -36,6 +36,9 @@ switch (uname)
 end
 
 set host (hostname -s)
+if test -eq 0 (id -u)
+  set host root@$host
+end
 
 function fish_title
   echo -n "$host: "
