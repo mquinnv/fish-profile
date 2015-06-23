@@ -4,8 +4,12 @@ set base ~
 
 if test ! -e $base/.fish
   echo "Checking out .fish"
-  git clone git@git:/git/fish .fish
+  git clone --recursive git@git:/git/fish .fish
+else
+  cd ~base/.fish
+  git submodule update --recursive
 end
+
 
 echo "Linking "
 function install
