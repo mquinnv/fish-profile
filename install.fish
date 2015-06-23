@@ -25,6 +25,7 @@ end
 
 install vimrc
 install vim
+install pgclirc
 install config/fish/config.fish
 
 fish -c "omf install"
