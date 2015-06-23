@@ -1,3 +1,0 @@
-[submodule "gundo.vim"]
-	path = gundo.vim
-	url = ./vim/bundle/gundo.vim
