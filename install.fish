@@ -2,7 +2,7 @@
 
 if test ! -e ~/.fish
   echo "Checking out .fish"
-  git clone --recursive git@git:/git/fish .fish
+  git clone --recursive git@github.com:mquinnv/fish-profile.git .fish
 else
   cd ~/.fish
 end
