@@ -7,9 +7,8 @@ if test ! -e $base/.fish
   git clone --recursive git@git:/git/fish .fish
 else
   cd ~base/.fish
-  git submodule update --recursive
 end
-
+git submodule update --init --recursive
 
 echo "Linking "
 function install
