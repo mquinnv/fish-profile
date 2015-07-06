@@ -52,3 +52,18 @@ end
 function update.fish
   ~/.fish/install.fish
 end
+
+function cg2
+  pgcli -h grothe cg2
+end
+function telecom
+  pgcli telecom
+end
+
+function sudo
+  if test "$argv" = !!
+    eval command sudo $history[1]
+  else
+    command sudo $argv
+  end
+end
