@@ -53,6 +53,12 @@ function update.fish
   ~/.fish/install.fish
 end
 
+function aj
+  pgcli -h amberjack amberjack
+end
+
+alias amberjack aj
+
 function cg2
   pgcli -h grothe cg2
 end
