@@ -73,3 +73,7 @@ function sudo
     command sudo $argv
   end
 end
+
+function jdk
+  set -g -x JAVA_HOME (/usr/libexec/java_home -v $argv[1])
+end
