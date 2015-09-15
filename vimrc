@@ -22,7 +22,7 @@ filetype plugin indent on
 cmap w!! %!sudo tee > /dev/null %
 set shell=bash\ -i
 au BufNewFile,BufRead *.gradle setf groovy
-au BufNewFile,BufRead *.xc setf json
+au BufNewFile,BufRead *.xc setf javascript
 colorscheme slate
 syntax on
 autocmd BufNewFile,BufRead * if match(getline(1),"node") >= 0 | set filetype=javascript | endif
@@ -55,3 +55,4 @@ let g:airline_powerline_fonts = 1
 let g:syntastic_javascript_checkers = ['jshint']
 set clipboard=unnamed
 map # :set invnumber <CR> <ESC>
+au BufEnter /private/tmp/crontab.* setl backupcopy=yes
