@@ -1,0 +1,6 @@
+package brew
+package gi
+package git@github.com:mquinnv/plugin-vi-mode
+package tab
+theme bobthefish
+theme default

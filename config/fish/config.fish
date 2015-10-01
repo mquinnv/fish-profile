@@ -9,19 +9,6 @@ set -g OMF_PATH $HOME/.local/share/omf
 # # Load oh-my-fish configuration.
  source $OMF_PATH/init.fish
 
-# Custom plugins and themes may be added to ~/.oh-my-fish/custom
-# Plugins and themes can be found at https://github.com/oh-my-fish/
-Theme 'bobthefish'
-Plugin 'theme'
-Plugin 'brew'
-Plugin 'gi'
-Plugin 'git-flow'
-Plugin 'jump'
-Plugin 'node'
-Plugin 'ssh'
-Plugin 'tab'
-Plugin 'vi-mode'
-
 alias dir 'ls -l'
 alias su 'sudo su'
 

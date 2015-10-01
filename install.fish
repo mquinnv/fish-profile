@@ -27,6 +27,8 @@ install vimrc
 install vim
 install pgclirc
 install config/fish/config.fish
+install config/omf/theme
+install config/omf/bundle
 
 fish -c "omf install"
 fish -c "set -U fish_key_bindings fish_default_key_bindings"
