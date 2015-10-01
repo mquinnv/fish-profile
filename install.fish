@@ -16,8 +16,8 @@ function install
   ln -s ~/.fish/$argv ~/$dot
 end
 
-if test -e ~/.oh-my-fish
-  cd ~/.oh-my-fish
+if test -e ~/.local/share/omf
+  cd ~/.local/share/omf
   git pull
 else
   curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
