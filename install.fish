@@ -20,7 +20,7 @@ if test -e ~/.oh-my-fish
   cd ~/.oh-my-fish
   git pull
 else
-  curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/tools/install.fish | fish
+  curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
 end
 
 install vimrc
