@@ -55,4 +55,4 @@ let g:airline_powerline_fonts = 1
 let g:syntastic_javascript_checkers = ['jshint']
 set clipboard=unnamed
 map # :set invnumber <CR> <ESC>
-au BufEnter /private/tmp/crontab.* setl backupcopy=yes
+au BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
