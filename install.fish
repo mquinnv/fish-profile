@@ -20,7 +20,7 @@ if test -e ~/.local/share/omf
   cd ~/.local/share/omf
   git pull
 else
-  curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | sh
+  curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 end
 
 install vimrc
