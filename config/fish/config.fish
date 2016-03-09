@@ -73,3 +73,4 @@ function fuck -d "Correct your previous console command"
     end
   end
 end
+set -g fish_key_bindings fish_vi_key_bindings
