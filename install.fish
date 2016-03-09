@@ -16,19 +16,15 @@ function install
   ln -s ~/.fish/$argv ~/$dot
 end
 
-if test -e ~/.local/share/omf
-  cd ~/.local/share/omf
+if test -e ~/.local/share/fisherman
+  cd ~/.local/share/fisherman
   git pull
 else
-  curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+  curl -sL get.fisherman.sh | fish
 end
 
 install vimrc
 install vim
-install pgclirc
 install config/fish/config.fish
-install config/omf/theme
-install config/omf/bundle
 
-fish -c "omf install"
 fish -c "set -U fish_key_bindings fish_default_key_bindings"
