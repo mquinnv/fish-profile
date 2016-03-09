@@ -81,3 +81,4 @@ function fish_vi_key_bindings_local
   bind -M insert -m insert \cc 'commandline ""'
 end
 set -g fish_key_bindings fish_vi_key_bindings_local
+set -g theme_hostname always
