@@ -104,3 +104,4 @@ function prompt_pwd --description 'Print the current working directory, shortene
     end
   end
 end
+set -gx LC_ALL en_US.UTF-8
