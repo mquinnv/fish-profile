@@ -77,3 +77,4 @@ function fish_greeting
 end
 set -g theme_hostname always
 set -g fish_user_paths {/usr,/usr/local,}/{bin,sbin} ~/bin
+set -gx LC_ALL en_US.UTF-8
