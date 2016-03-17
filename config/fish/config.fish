@@ -77,3 +77,30 @@ function fish_greeting
 end
 set -g theme_hostname always
 set -g fish_user_paths {/usr,/usr/local,}/{bin,sbin} ~/bin
+function prompt_pwd --description 'Print the current working directory, shortened to fit the prompt'
+  set -q argv[1]
+  and switch $argv[1]
+    case -h --help
+    __fish_print_help prompt_pwd
+    return 0
+  end
+
+# This allows overriding fish_prompt_pwd_dir_length from the outside (global or universal) without leaking it
+  set -q fish_prompt_pwd_dir_length
+  or set -l fish_prompt_pwd_dir_length 1
+
+# Replace $HOME with "~"
+  set realhome ~
+  set -l tmp (string replace -r '^'"$realhome"'($|/)' '~$1' $PWD)
+
+  if [ $fish_prompt_pwd_dir_length -eq 0 ]
+  echo $tmp
+  else
+# Shorten to at most $fish_prompt_pwd_dir_length characters per directory
+    if echo $tmp | grep -q -E '^.*sites.*$'
+      string replace -ar '.*sites/(.*)' '$1' $tmp
+    else
+      string replace -ar '(\.?[^/]{'"$fish_prompt_pwd_dir_length"'})[^/]*/' '$1/' $tmp
+    end
+  end
+end
