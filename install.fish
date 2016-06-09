@@ -8,6 +8,8 @@ else
 end
 git submodule update --init --recursive
 
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+
 echo "(Re-)linking "
 function install
   set dot .$argv
