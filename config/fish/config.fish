@@ -72,7 +72,7 @@ end
 function fish_greeting
 end
 set -g theme_hostname always
-set -g fish_user_paths {/usr,/usr/local,}/{bin,sbin} ~/bin
+set -g fish_user_paths ~/bin {/usr,/usr/local,}/{bin,sbin} 
 function prompt_pwd --description 'Print the current working directory, shortened to fit the prompt'
   set -q argv[1]
   and switch $argv[1]
