@@ -8,19 +8,14 @@ else
 end
 git submodule update --init --recursive
 
+curl -L https://get.oh-my.fish | fish
+
 echo "(Re-)linking "
 function install
   set dot .$argv
   test -e ~/$dot
   and rm -rf ~/$dot
   ln -s ~/.fish/$argv ~/$dot
-end
-
-if test -e ~/.local/share/fisherman
-  cd ~/.local/share/fisherman
-  git pull
-else
-  curl -sL get.fisherman.sh | fish
 end
 
 install vimrc

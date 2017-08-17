@@ -1,7 +1,3 @@
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
-
 alias dir 'ls -l'
 alias su 'sudo su'
 
@@ -76,7 +72,7 @@ end
 function fish_greeting
 end
 set -g theme_hostname always
-set -g fish_user_paths {/usr,/usr/local,}/{bin,sbin} ~/bin
+set -g fish_user_paths ~/bin {/usr,/usr/local,}/{bin,sbin} 
 function prompt_pwd --description 'Print the current working directory, shortened to fit the prompt'
   set -q argv[1]
   and switch $argv[1]
@@ -105,3 +101,5 @@ function prompt_pwd --description 'Print the current working directory, shortene
   end
 end
 set -gx LC_ALL en_US.UTF-8
+set -g theme_nerd_fonts yes
+set -g theme_color_scheme zenburn
