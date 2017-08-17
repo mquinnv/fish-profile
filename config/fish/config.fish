@@ -101,3 +101,5 @@ function prompt_pwd --description 'Print the current working directory, shortene
   end
 end
 set -gx LC_ALL en_US.UTF-8
+set -g theme_nerd_fonts yes
+set -g theme_color_scheme zenburn
