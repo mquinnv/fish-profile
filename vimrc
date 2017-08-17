@@ -57,3 +57,5 @@ set clipboard=unnamed
 map # :set invnumber <CR> <ESC>
 au BufNewFile,BufRead crontab.* set nobackup | set nowritebackup
 au BufNewFile,BufRead /private/var/* set nobackup | set nowritebackup
+set nolist
+autocmd FileType make setlocal noexpandtab
